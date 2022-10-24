@@ -1,0 +1,1410 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 13, 2022 09:11:44 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 13, 2022 09:11:44 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 13, 2022 09:11:55 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='58%'><b>7</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='41%'><b>5</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'><b>31</b> steps passed</small></div>
+<div>
+<small data-tooltip='12%'><b>5</b> steps failed,
+<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Get book by ISBN":4.565,"Get city airdata":3.302,"Parameters and multi part form data":3.31
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@parameter</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@city</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@books</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>system1</td>
+<td>info1</td>
+</tr>
+<tr>
+<td>system2</td>
+<td>info2</td>
+</tr>
+<tr>
+<td>system3</td>
+<td>info3</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 7,
+failChild: 5,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 31,
+failGrandChild: 5,
+warningGrandChild: 0,
+skipGrandChild: 5,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@parameter</a><a class="dropdown-item" href="#">@city</a><a class="dropdown-item" href="#">@books</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag="@books"
+          device="">
+          <div class="test-detail">
+            <p class="name">Get book by ISBN</p>
+            <p class="text-sm">
+              <span>9:11:44 PM</span> / <span>00:00:04:565</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Get book by ISBN</h5>
+<span class='badge badge-success'>05.13.2022 9:11:44 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:11:49 PM</span>
+<span class='badge badge-default'>00:00:04:565</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@books</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User calls web service to get a book by its ISBN</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">400</td>
+ 					<td colspan=3>https://www.googleapis.com/books/v1/volumes?q=isbn%3A9781451648546</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/f2d72217-3b40-4a3c-8ce2-37a55289b353-Body.html" type="Body"><a href='#' onClick="window.open('data/f2d72217-3b40-4a3c-8ce2-37a55289b353-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/f2d72217-3b40-4a3c-8ce2-37a55289b353-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/f2d72217-3b40-4a3c-8ce2-37a55289b353-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/f2d72217-3b40-4a3c-8ce2-37a55289b353-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/f2d72217-3b40-4a3c-8ce2-37a55289b353-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/d2380625-0254-4b0d-8693-651576ccdaf6-Body.html" type="Body"><a href='#' onClick="window.open('data/d2380625-0254-4b0d-8693-651576ccdaf6-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/d2380625-0254-4b0d-8693-651576ccdaf6-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/d2380625-0254-4b0d-8693-651576ccdaf6-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_book_exists_with_isbn(java.lang.String)">
+                <span>Given a book exists with an isbn of 9781451648546</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn()">
+                <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefs.BookStepDefinitions.verify_status_code(int)">
+                <span>Then the status code is 200</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.BookStepDefinitions.response_equals(java.util.Map<java.lang.String, java.lang.String>)">
+                <span>And response includes the following</span>
+      <div><table class='markup-table table '><tr><td>totalItems</td><td>1</td></tr><tr><td>kind</td><td>books#volumes</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.BookStepDefinitions.response_contains_in_any_order(java.util.Map<java.lang.String, java.lang.String>)">
+                <span>And response includes the following in any order</span>
+      <div><table class='markup-table table '><tr><td>items.volumeInfo.title</td><td>Steve Jobs</td></tr><tr><td>items.volumeInfo.publisher</td><td>Simon and Schuster</td></tr><tr><td>items.volumeInfo.pageCount</td><td>630</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Isbn Google Base</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>ISBN Google Base</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">400</td>
+ 					<td colspan=3>https://www.googleapis.com/books/v1/volumes?q=isbn%3A9781451648546</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-Body.html" type="Body"><a href='#' onClick="window.open('data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/c05dce7c-6fd7-4fe9-929a-84b9e6795a46-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/0fe91792-4492-42d4-8be2-74bfc9249304-Body.html" type="Body"><a href='#' onClick="window.open('data/0fe91792-4492-42d4-8be2-74bfc9249304-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/0fe91792-4492-42d4-8be2-74bfc9249304-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/0fe91792-4492-42d4-8be2-74bfc9249304-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+                  <div class="step pass-bg">
+                    <span>Given a book exists with an isbn of 9781451648546</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the status code is 200</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>ISBN Google Base</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">400</td>
+ 					<td colspan=3>https://www.googleapis.com/books/v1/volumes?q=isbn%3A432877</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-Body.html" type="Body"><a href='#' onClick="window.open('data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/6f7c750d-ccff-4b9d-a9f7-459ab24a600c-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/9a372a67-5934-4370-b266-dc4d95b2a066-Body.html" type="Body"><a href='#' onClick="window.open('data/9a372a67-5934-4370-b266-dc4d95b2a066-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/9a372a67-5934-4370-b266-dc4d95b2a066-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/9a372a67-5934-4370-b266-dc4d95b2a066-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+                  <div class="step pass-bg">
+                    <span>Given a book exists with an isbn of 432877</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then the status code is 404</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <400>.
+
+
+</textarea>
+      
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log fail-bg mr-2">Fail</span>User calls web service to get a non existant book by its ISBN</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">400</td>
+ 					<td colspan=3>https://www.googleapis.com/books/v1/volumes?q=isbn%3A432877</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-Body.html" type="Body"><a href='#' onClick="window.open('data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/2533263c-a78d-41fc-8ad3-6c3c48a4f674-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/d3544870-e72a-431f-a1ac-0dbd377f2174-Body.html" type="Body"><a href='#' onClick="window.open('data/d3544870-e72a-431f-a1ac-0dbd377f2174-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/d3544870-e72a-431f-a1ac-0dbd377f2174-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/d3544870-e72a-431f-a1ac-0dbd377f2174-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_book_exists_with_isbn(java.lang.String)">
+                <span>Given a book exists with an isbn of 432877</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn()">
+                <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefs.BookStepDefinitions.verify_status_code(int)">
+                <span>Then the status code is 404</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <404> but was <400>.
+
+
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="21"><span class="badge log fail-bg mr-2">Fail</span>User ISBN 2 calls</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">400</td>
+ 					<td colspan=3>https://www.googleapis.com/books/v1/volumes?q=isbn%3A9781451648546</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/c8e3704e-b6de-445a-868f-a133a7009e45-Body.html" type="Body"><a href='#' onClick="window.open('data/c8e3704e-b6de-445a-868f-a133a7009e45-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c8e3704e-b6de-445a-868f-a133a7009e45-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/c8e3704e-b6de-445a-868f-a133a7009e45-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c8e3704e-b6de-445a-868f-a133a7009e45-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/c8e3704e-b6de-445a-868f-a133a7009e45-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/f2c75e56-41c9-4a6c-a8b4-6700e605790c-Body.html" type="Body"><a href='#' onClick="window.open('data/f2c75e56-41c9-4a6c-a8b4-6700e605790c-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/f2c75e56-41c9-4a6c-a8b4-6700e605790c-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/f2c75e56-41c9-4a6c-a8b4-6700e605790c-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_book_exists_with_isbn(java.lang.String)">
+                <span>Given a book exists with an isbn of 9781451648546</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn()">
+                <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefs.BookStepDefinitions.verify_status_code(int)">
+                <span>Then the status code is 200</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: 1 expectation failed.
+Expected status code <200> but was <400>.
+
+
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.BookStepDefinitions.a_book_exists_with_isbn(java.lang.String)">
+                <span>Given a book exists with an isbn of 432877</span>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.BookStepDefinitions.a_user_retrieves_the_book_by_isbn()">
+                <span>When a user retrieves the book by isbn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefs.BookStepDefinitions.verify_status_code(int)">
+                <span>Then the status code is 404</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="@city"
+          device="">
+          <div class="test-detail">
+            <p class="name">Get city airdata</p>
+            <p class="text-sm">
+              <span>9:11:49 PM</span> / <span>00:00:03:302</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get city airdata</h5>
+<span class='badge badge-success'>05.13.2022 9:11:49 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:11:52 PM</span>
+<span class='badge badge-default'>00:00:03:302</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@city</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Simple cuke test</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+	
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.commonStep()">
+                <span>Given step one</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.commonStep()">
+                <span>When step two</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.commonStep()">
+                <span>Then step three</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>User calls web service to get london air data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://api.waqi.info/feed/london/?token=1a5d8f027e344fa191b88e966bdb5d4aa4853d4a</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/c82e8dd2-9ea4-4308-a2c4-c6b018b90db6-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/c82e8dd2-9ea4-4308-a2c4-c6b018b90db6-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/c82e8dd2-9ea4-4308-a2c4-c6b018b90db6-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/c82e8dd2-9ea4-4308-a2c4-c6b018b90db6-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/1ac14948-8c36-49f1-89f9-85f2a7645852-Body.html" type="Body"><a href='#' onClick="window.open('data/1ac14948-8c36-49f1-89f9-85f2a7645852-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/1ac14948-8c36-49f1-89f9-85f2a7645852-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/1ac14948-8c36-49f1-89f9-85f2a7645852-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.city_air_data_for_london_exists(java.lang.String)">
+                <span>Given air data for london exists</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.retrieve_the_city_air_data()">
+                <span>When retrieve the air data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.CityDataStepDefinitions.verify_status_code(int)">
+                <span>Then the air data status code is 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>User Calls Web Service To Get <city> Air Data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>User calls web service to get munich air data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://api.waqi.info/feed/munich/?token=1a5d8f027e344fa191b88e966bdb5d4aa4853d4a</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/d6323aff-31e0-4fe1-8e2a-b1bcaf755883-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/d6323aff-31e0-4fe1-8e2a-b1bcaf755883-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/d6323aff-31e0-4fe1-8e2a-b1bcaf755883-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/d6323aff-31e0-4fe1-8e2a-b1bcaf755883-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/b1bf4544-2627-468b-8350-87e75e96b971-Body.html" type="Body"><a href='#' onClick="window.open('data/b1bf4544-2627-468b-8350-87e75e96b971-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/b1bf4544-2627-468b-8350-87e75e96b971-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/b1bf4544-2627-468b-8350-87e75e96b971-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+                  <div class="step pass-bg">
+                    <span>Given air data for munich exists</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When retrieve the air data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the air data status code is 200</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="42"><span class="badge log pass-bg mr-2">Pass</span>User calls web service to get paris air data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://api.waqi.info/feed/paris/?token=1a5d8f027e344fa191b88e966bdb5d4aa4853d4a</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/83a10147-c4aa-4959-a06a-3e0c35d644fd-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/83a10147-c4aa-4959-a06a-3e0c35d644fd-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/83a10147-c4aa-4959-a06a-3e0c35d644fd-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/83a10147-c4aa-4959-a06a-3e0c35d644fd-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/362b29b8-7795-41ef-bc0f-5ab54bec9297-Body.html" type="Body"><a href='#' onClick="window.open('data/362b29b8-7795-41ef-bc0f-5ab54bec9297-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/362b29b8-7795-41ef-bc0f-5ab54bec9297-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/362b29b8-7795-41ef-bc0f-5ab54bec9297-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+                  <div class="step pass-bg">
+                    <span>Given air data for paris exists</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When retrieve the air data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the air data status code is 200</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>User calls web service to get rome air data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://api.waqi.info/feed/rome/?token=1a5d8f027e344fa191b88e966bdb5d4aa4853d4a</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/ed919a82-c69e-41c5-a9af-112eb462f732-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/ed919a82-c69e-41c5-a9af-112eb462f732-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/ed919a82-c69e-41c5-a9af-112eb462f732-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/ed919a82-c69e-41c5-a9af-112eb462f732-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/7e5b4cba-5b92-41ef-86f3-7dfc266efffc-Body.html" type="Body"><a href='#' onClick="window.open('data/7e5b4cba-5b92-41ef-86f3-7dfc266efffc-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/7e5b4cba-5b92-41ef-86f3-7dfc266efffc-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/7e5b4cba-5b92-41ef-86f3-7dfc266efffc-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+                  <div class="step pass-bg">
+                    <span>Given air data for rome exists</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When retrieve the air data</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the air data status code is 200</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag="@parameter"
+          device="">
+          <div class="test-detail">
+            <p class="name">Parameters and multi part form data</p>
+            <p class="text-sm">
+              <span>9:11:52 PM</span> / <span>00:00:03:310</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Parameters and multi part form data</h5>
+<span class='badge badge-success'>05.13.2022 9:11:52 PM</span>
+<span class='badge badge-danger'>05.13.2022 9:11:55 PM</span>
+<span class='badge badge-default'>00:00:03:310</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@parameter</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log pass-bg mr-2">Pass</span>Multi part form data display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://run.mocky.io/v3/e2ba1326-1863-40da-9666-ff70661b2111?hello=hello</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/018739a2-0c23-415d-a906-832baaa0eb24-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/018739a2-0c23-415d-a906-832baaa0eb24-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/018739a2-0c23-415d-a906-832baaa0eb24-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/018739a2-0c23-415d-a906-832baaa0eb24-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/118a75aa-7a6a-4131-a868-8ea4a7efa984-Body.html" type="Body"><a href='#' onClick="window.open('data/118a75aa-7a6a-4131-a868-8ea4a7efa984-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/118a75aa-7a6a-4131-a868-8ea4a7efa984-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/118a75aa-7a6a-4131-a868-8ea4a7efa984-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.prepare_data_for_submission()">
+                <span>Given prepare data for submission</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.retrieve_the_mocked_data()">
+                <span>When retrieve the mocked data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.verify_status_code(int)">
+                <span>Then verify status code is 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Parameter data display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+
+<!-- Hack to include styles as do not have access to online css and js locations -->
+<style>
+.italic10 {width:10%;font-weight: bold;font-style: italic;}
+.bold10 {width:10%;font-weight: bold;}
+.width40 {width:40%;}
+</style>
+
+
+		    		
+ 		
+ 		
+		<table class="table table-sm">
+			<tbody> 				
+ 				<tr class="event-row">
+ 					<td class="italic10">GET</td>
+ 					<td class="italic10">200</td>
+ 					<td colspan=3>https://run.mocky.io/v3/e2ba1326-1863-40da-9666-ff70661b2111?hello=hello&query=query&form=form</td>
+ 				</tr>
+ 				<tr class="event-row">
+ 					<td class="bold10">Request</td>
+ 					<td class="width40" colspan=2><span data="data/7f78d76a-fc7e-402e-8ba6-6fec532acac3-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/7f78d76a-fc7e-402e-8ba6-6fec532acac3-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;<span data="data/7f78d76a-fc7e-402e-8ba6-6fec532acac3-All Parameters.html" type="Parameters"><a href='#' onClick="window.open('data/7f78d76a-fc7e-402e-8ba6-6fec532acac3-All Parameters.html','','width=700,height=500'); return false;">Parameters</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 					<td class="bold10">Response</td>
+ 					<td class="width40"><span data="data/886b7ec2-8757-4003-8b2c-f49134198d55-Body.html" type="Body"><a href='#' onClick="window.open('data/886b7ec2-8757-4003-8b2c-f49134198d55-Body.html','','width=700,height=500'); return false;">Body</a></span> &nbsp;&nbsp;&nbsp;<span data="data/886b7ec2-8757-4003-8b2c-f49134198d55-Headers And Cookies.html" type="Headers & Cookies"><a href='#' onClick="window.open('data/886b7ec2-8757-4003-8b2c-f49134198d55-Headers And Cookies.html','','width=700,height=500'); return false;">Headers & Cookies</a></span> &nbsp;&nbsp;&nbsp;</td>
+ 				</tr>	  				
+  			</tbody>
+		</table>
+	
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.prepare_parameter_data_for_submission()">
+                <span>Given prepare parameter data for submission</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.retrieve_the_mocked_data()">
+                <span>When retrieve the mocked data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefs.ParametersStepDefinitions.verify_status_code(int)">
+                <span>Then verify status code is 200</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>Then the status code is 200</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User calls web service to get a book by its ISBN.Then the status code is 200</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Then the status code is 200</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.ISBN Google Base.Then the status code is 200</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Then the status code is 404</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.ISBN Google Base.Then the status code is 404</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Then the status code is 404</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User calls web service to get a non existant book by its ISBN.Then the status code is 404</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='24'>Then the status code is 200</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User ISBN 2 calls.Then the status code is 200</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@parameter</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@parameter</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='50' id='50'>Parameters and multi part form data</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='50' id='51'>Multi part form data display</a>
+<div class="">
+<span class="badge badge-default">Parameters and multi part form data.Multi part form data display</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='50' id='55'>Parameter data display</a>
+<div class="">
+<span class="badge badge-default">Parameters and multi part form data.Parameter data display</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@city</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@city</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Get city airdata</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Simple cuke test</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.Simple cuke test</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='33'>User calls web service to get london air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get london air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='38'>User calls web service to get munich air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get munich air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:50 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='42'>User calls web service to get paris air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get paris air data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:11:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='46'>User calls web service to get rome air data</a>
+<div class="">
+<span class="badge badge-default">Get city airdata.User calls web service to get rome air data</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@books</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@books</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Get book by ISBN</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>User calls web service to get a book by its ISBN</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User calls web service to get a book by its ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>ISBN Google Base</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.ISBN Google Base</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>ISBN Google Base</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.ISBN Google Base</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:48 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>User calls web service to get a non existant book by its ISBN</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User calls web service to get a non existant book by its ISBN</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:11:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>User ISBN 2 calls</a>
+<div class="">
+<span class="badge badge-default">Get book by ISBN.User ISBN 2 calls</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
